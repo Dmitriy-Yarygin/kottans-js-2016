@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang=ru>
+
+<head>
+	<meta charset=utf-8>
+	<title>Habrahabr.ru</title>
+</head>
+
+
+<body>
+
+	<nav>
+	      <a href="https://tmfeed.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">TM Feed</a>
+	      <a href="https://habrahabr.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo" class="current">Хабрахабр</a>
+	      <a href="https://geektimes.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Geektimes</a>
+	      <a href="https://toster.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Тостер</a>
+	      <a href="https://moikrug.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Мой круг</a>
+	      <a href="https://freelansim.ru?utm_source=habrahabr&utm_medium=referral&utm_campaign=mainpage&utm_content=head_link">Фрилансим</a>
+	</nav>
+
+<article>
+	<h1> Десять типичных вопросов на собеседованиях на знание HTML </h1>
+	<figure>
+		<p><a href="http://www.sitepoint.com/author/aderosa/">Аурэлио Де Роза</a> несколько дней назад выпустил, на мой взгляд, очень привлекательную <a href="http://www.sitepoint.com/10-typical-html-interview-exercises/">статью</a>, которой я хочу с вами поделиться на тот случай, если у вас плохо с английским. </p><hr/>
+		<p>Несколько недель назад на SitePoint были опубликованы две мои статьи, в которых я рассмотрел наиболее часто задаваемые на собеседовании вопросы по JavaScript (в случае, если вы пропустили: <a href="http://www.sitepoint.com/5-typical-javascript-interview-exercises/">«5 Typical JavaScript Interview Exercises»</a> и <a href="http://www.sitepoint.com/5-javascript-interview-exercises/">«5 More JavaScript Interview Exercises»</a>).</p>
+		<p>Обе эти статьи имели огромный успех, что было крайне неожиданным. Я решил, что пришло время написать подобную статью, но уже на тему HTML — и вот, что у меня получилось.</p>
+	</figure>
+
+
+	<figure>
+		<section>
+			<h1>1.Валидация разметки</h1>
+			<p>Рассмотрим следующую разметку:</p>
+<pre><code class="html">&lt;figure&gt;
+   &lt;picture&gt;
+      &lt;source media=&quot;(min-width: 40em)&quot;
+      srcset=&quot;large.jpg 1024w, medium.jpg 640w, small.jpg 320y&quot;&gt;
+      &lt;img src=&quot;medium.jpg&quot; alt=&quot;London by night&quot;&gt;
+   &lt;/picture&gt;
+   &lt;figcaption&gt;A landscape of London by night&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre><br/>
+			<p> Валидный ли это код? Поясните, почему.</p>
+		</section>	
+		<section>
+			<h1>Ответ</h1>
+			<p> В разметке используется <a href="http://www.w3.org/TR/html-picture-element/">тэг picture</a>, который совсем недавно вошел в спецификацию. Код валидный вплоть до последнего изображения в атрибуте <code>srcset</code>; <code>320y</code> — невалидное значение. Если изменить <code>y</code> на <code>w</code>, то код будет валидным полностью.</p>
+		</section>
+	</figure>
+<!--        ..............................         -->
+<!--        ..............................         -->
+<!--        ..............................         -->
+	<figure>
+		<h1> Заключение </h1>
+		<p>В данной статье я рассмотрел десять вопросов для собеседования, которые вы можете использовать для тестирования на знание HTML. В следующем своем собеседовании вы можете использовать один или несколько из них.</p>
+		<p>Чтобы помочь вам изучить эти и другие смежные по теме семантики вопросы, я рекомендую прочитать некоторые из следующих статей SitePoint:</p>
+		<ul>
+			<li><a href="http://www.sitepoint.com/5-obsolete-features-html5/">5 Obsolete Features in HTML5</a></li>
+			<li><a href="http://www.sitepoint.com/html5-time-element-guide/">A Guide to the HTML5 ‘time’ Element</a></li>
+			<li><a href="http://www.sitepoint.com/20-html-elements-better-text-semantics/">20 HTML Elements for Better Text Semantics</a></li>
+			<li><a href="http://www.sitepoint.com/replacing-radio-buttons-without-replacing-radio-buttons/">Replacing Radio Buttons Without Replacing Radio Buttons</a></li>
+			<li><a href="http://www.sitepoint.com/everything-need-know-html-pre-element/">Everything You Need to Know About HTML’s ‘pre’ Element</a></li>
+		</ul>
+		<p> Если у вас есть интересные вопросы по HTML? Делитесь ими в комментариях, возможно, тем самым вы поможете другим разработчикам, когда они будут проходить своё собеседование.</p>
+	</figure>
+</article>
+
+<aside>
+	<h1> Комментарии (<span id="comments_count">42</span>) </h1>
+	 <ul id="comments-list"> <!-- .... --> </ul>
+
+</aside>
+
+</body>
