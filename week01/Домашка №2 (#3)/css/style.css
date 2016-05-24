@@ -1,0 +1,183 @@
+body{
+  font-family: Arial;
+  background-color: Gainsboro;
+}
+.header1{
+  margin: 5%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+main {     
+  margin: 5%;
+  margin-bottom: 60px;
+  background-color: white;
+} 
+.horizontAlign {     
+  display: flex;
+  justify-content: space-between;
+} 
+.roundConnerRect{
+  border-radius: 3px;
+  border: 1px solid grey;
+}  
+input, select{
+  border-radius: 3px;
+  height: 30px;
+}  
+.header2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+}
+.header2 figure{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.orderTable {
+  font-size: 70%;
+  padding-left: 2em;
+  width: 100%;
+}
+.div1{
+  width: 80%;  
+}
+.orderTable th{
+  text-align: left;
+  width: 20%;
+}
+.itemTitle{
+  font-size: 110%;
+  font-weight: 600; /* Жирное начертание */
+  margin-top: 60px;
+}
+.itemTitle span{
+  font-weight: normal; 
+  font-size: 60%;
+}
+.filesTable {
+  font-size: 70%;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.filesTable table {
+  width: 100%;
+}
+.filesTable th{
+  text-align: left;
+  width: 25%;
+}
+button{
+  width: 150px;
+  height: 30px;
+  font-size: 70%;
+  border: 1px solid grey;  
+  border-radius: 5px;
+}
+.orderBtn{
+  background-color: teal;
+  color: white;
+}
+.buttons2{  
+  margin-left: 20px;  
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottomAlign{
+  bottom: 30%;
+}
+.toTheRight{
+  font-size: 70%;
+  padding: 25px;
+  border-left: 1px solid grey;
+  width: 30%;
+}
+.whatTranslate{
+  text-align:  center;
+  justify-content:  center;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+.radio{
+  margin: 50px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center; 
+}
+.item3{
+  width: 60%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.item4{
+}
+.item5{
+}
+.timelineInfo{
+  font-size: 70%;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.oneByOne{
+  display: flex;  
+  flex-direction: row; 
+}
+.paySys {  
+  margin-top: 25px; 
+  display: flex;  
+  flex-direction: row;  
+  align-items: center;
+} 
+.card {
+  margin-top: 25px;  
+  display: flex;  
+  flex-direction: row;
+}
+.cardNumber{
+  width: 20em;
+}
+input{
+  margin-right: 25px;  
+}
+.cardCNN{
+  width: 5em;
+}
+.mainFooter {
+  margin: 40px;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainFooter button{
+  margin-left: 20px;
+}
+footer {  
+  padding: 5%;
+  background-color: #3E4D63;
+  display: flex;  
+  flex-direction: raw;
+  justify-content: space-between;
+  align-items: flex-start;
+} 
+adress.footerElems{     
+  width: 30%;
+} 
+.leftPadding{
+  padding-left: 2em;
+  padding-right: 1em;
+}
+img{
+  opacity: 0.2;
+}

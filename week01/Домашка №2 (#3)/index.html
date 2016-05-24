@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Dmitriy Yarygin</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <header class="header1">
+  <button onClick="history.back()"> &#8592 GO BACK </button>
+  <img src="emblem.png" alt='emblem'>
+  <button onClick=""> &#9997 SIGN IN </button>
+</header> 
+
+<main class="roundConnerRect">
+  <header class="header2">
+    <figure class="fig1">
+      <div class="div1">
+        <h5> YOUR ORDER </h5>
+        <table class="orderTable">
+          <tr>
+            <th>ITEMS</th>
+            <th>DETAILS</th>
+            <th>PRICE</th>
+            <th>DELIVERY</th>
+          </tr>
+          <tr>
+            <td>documents</td>
+            <td>languages</td>
+            <td>$0.00</td>
+            <td>X hours</td>
+          </tr>
+        </table>
+      </div>
+      <div class="buttons2">
+        <button class="orderBtn">PLACE ORDER</button>
+        <button class="bottomAlign">PRINT A QUOTE</button>
+      </div>
+    </figure>
+    
+    <section class="toTheRight">
+      <h5>HELP CENTER</h5>
+      <p>If you need assistance while placing your 
+        order, contact one of our beloved Project 
+        Manager by phone or email.</p>
+      <b> +971(0)555 555  help@qtest.com </b>
+    </section>
+  </header>
+    
+
+  <figure>
+    <div class="whatTranslate">
+      <b>SELECT WHAT YOU WANT TO TRANSLATE</b>
+    </div>      
+    <div class="radio">      
+      <span>
+        <label> Website </label>
+        <input type="radio" name="whatTranslate" value="Website">
+      </span>
+      <span>
+        <label> Document </label>
+        <input type="radio" name="whatTranslate" value="Document" checked>
+      </span>
+      <span>
+        <label> Social Account </label>
+        <input type="radio" name="whatTranslate" value="SocialAccount">
+      </span>
+    </div>            
+  </figure>
+
+  <figure>
+      <p class="itemTitle">1 Upload your documents  <span>(Doc, Docx,Text,PDF, Markdown)</span>   </p>
+      <p>
+          <input type="file" accept="	application/msword,	text/plain,application/pdf,text/xml">
+      </p>
+      <div class="filesTable">
+        <table>
+          <tr>
+            <th>FILE NAME</th>
+            <th>FILE SIZE</th>
+            <th>NUMBER OF WORDS</th>
+            <th>REMOVE</th>
+          </tr>
+        </table>
+      </div>  
+  </figure>
+  
+  <figure>
+    <p class="itemTitle">2 Choose your languages pairings </p>
+    <label>FROM</label>
+    <select> 
+      <option>English</option>
+      <option>Arabic</option>
+      <option>Kurdish</option>
+    </select>    
+    <br><br>
+    <label>TO</label> 
+    <button> + ADD </button>
+  </figure>
+
+  <div class="horizontAlign">
+  <figure class="item3">
+    <p class="itemTitle">3 Select your desired tone </p>
+    <label> Friendly / Casual 
+    <input type="radio" name="desiredTone" value="Casual"></label>
+    <label> Corporate / Pro 
+    <input type="radio" name="desiredTone" value="Pro" checked></label>
+    <label> Media / Formal 
+    <input type="radio" name="desiredTone" value="Formal"></label>
+  </figure>    
+  <figure class="item4">
+    <p class="itemTitle">4 Tell us how urgent this job is </p>
+    <label>I GOT TIME</label>
+    <input type="range" min="1" max="3" step="1" value="2"/>    
+    <label>YESTERDAY</label>
+    <div class="timelineInfo">
+      <b>TIMELINE INFO</b>
+      <p>With an AVERAGE timeline det up our translator can take a reasonable amount of time perfecting your translation</p>
+    </div>
+  </figure>    
+  </div>
+  
+  <figure class="item5">
+    <p class="itemTitle">5 Sign up and choose a payment method</p>
+    <p>Alredy have anaccount with us? <a href="" >Sign in.</a></p>
+    
+        <label> FULL NAME <br>
+        <input type="text" value="Mathieu Mayer">  </label>  
+    <div class="oneByOne">
+      <div>
+        <label> EMAIL ADRESS <br>
+        <input type="email" value="mathieu.mm@me.com"></label>
+      </div>
+      <div>  
+        <label>CHOOSE A PASSWORD <br>
+        <input type="password"></label> 
+      </div>
+    </div>
+<div class="paySys">    
+<label> VISA / MasterCard </label>
+<input type="radio" name="paySys" value="VISAorMC" checked>
+<label> PayPal </label>
+<input type="radio" name="paySys" value="PayPal">
+<label> amazon.com </label>
+<input type="radio" name="paySys" value="amazon">
+</div>    
+    
+<div class="card">
+    <label>CARD NUMBER <br>
+        <input type="text" autocomplete="off" class="cardNumber" maxlength="19" tabindex="3" error-hint="Некорректные данные"> </label>
+    <label>EXPIRE DATE <br>
+        <input type="date" class="cardDate" > </label>
+    <label>CODE<br>
+        <input class="cardCNN" maxlength="3"> </label>
+</div>
+    
+    
+      <div class="mainFooter">
+        <input type="checkbox" checked>
+        <small>I agree to the <a href="" >Terms & Conditions</a></small>
+        <button  class="orderBtn">PLACE ORDER</button>
+        <button>PRINT A QUOTE</button>
+      </div>
+  
+</main>
+
+
+
+<footer class="horizontAlign">
+  <adress class="footerElems"> 
+    <h5>&#9825 WHAT WE DO</h5>
+      <div class="leftPadding">   
+        <p><i> We provide a full range of language
+              services including content development, 
+              document, website and social media 
+              accounts translations. </i></p>   
+      </div>  
+  </adress>    
+    
+  <adress class="footerElems"> 
+      <h5>&#9990 OUR MAIN OFFICE</h5>
+      <div class="leftPadding">   
+          <p>  Dubai, UAE </p>
+          <p> P.O. Box: 502735 </p>
+          <p> Phone: +971(0)44278128 </p> 
+      </div>  
+  </adress>   
+  
+  <adress class="footerElems">  
+    <h5>CONNECT WITH US</h5>
+      <ul>
+        <li> Facebook </li>
+        <li> Twitter </li>
+        <li> Linkedin </li> 
+      </ul>      
+  </adress>  
+  
+  <div>  
+     <img src="emblem.png" alt='emblem'> 
+  </div>   
+</footer>
+    
+    
+    
+    
+    
+  </body>
+</html>
