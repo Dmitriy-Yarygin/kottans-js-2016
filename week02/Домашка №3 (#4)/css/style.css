@@ -1,0 +1,287 @@
+
+.translationOrderForm {   
+  margin: 0px 9% 140px 9%;
+  border-radius: 3px;
+  border: 1px solid grey;
+  background-color: white;
+} 
+.translationOrderForm>section{
+  padding: 50px 100px;
+}
+input, select{
+  border-radius: 3px;
+  height: 30px;
+  margin-right: 25px;  
+}
+h1, th, button{
+  text-transform: uppercase;
+}
+button{
+  padding: 10px;
+  cursor:pointer;
+  color: inherit;
+}
+.translationOrderForm, button, .filesTable, .timelineInfo,
+.what-you-want-translate label, .Select-your-desired-tone label {
+  border: 1px solid grey;  
+  border-radius: 5px;
+}
+
+.order-header{
+  display: flex;  
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+.order-header>section{
+  font-size: 80%;
+}
+.order-header h1{
+  font-size: 99%;
+  text-indent: -20px;
+}
+.help-center h1{
+  text-indent: -35px;
+}
+
+.your-order{
+  padding: 12px 10px 10px 50px;
+  min-width: 250px;
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  flex: 4 4 40%
+}
+.order-buttons{
+  padding-right: 25px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  min-width: 100px;
+  flex: 1 1 15%  
+}
+.help-center{
+  padding: 12px 10px 10px 50px;
+  min-width: 150px;
+  border-left: 1px solid grey;
+  flex: 2.5 2.5 25%
+}
+.help-center a {
+  padding-right: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+.your-order>h1::before {  
+    padding: 0.7em;
+    content: "";
+    background: url(../edit-tablet.svg) no-repeat center;
+    opacity: 0.7;
+}
+.help-center>h1::before {
+    padding: 1.3em;
+    content: "";
+    background: url(../designfloat-logo-square.svg) no-repeat center;
+}
+
+.orderTable {
+  padding-top: 1.5em;
+  width: 100%;
+}
+.orderTable th{
+  text-align: left;
+  width: 25%;
+}
+.order-buttons button {
+  margin: 15px 5px;
+  width: 100%;
+}
+.place-order-button {
+  background-color: RGB(95, 202, 198);
+  color: white;
+}
+
+.what-you-want-translate>h1{
+  font-weight: 100;
+}
+.what-you-want-translate {
+  text-align:  center;
+  padding-top: 50px;
+}
+.bottomLine{
+  display: flex;
+  margin: auto;
+  width: 32em;
+  border-bottom: 1px solid grey;
+}
+.whatTranslate{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+.whatTranslate input {
+  display:none;
+}
+.whatTranslate img {
+  width: 50%;  
+  mix-blend-mode: multiply; 
+}
+.whatTranslate>label {
+  cursor:pointer;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+  min-width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.whatTranslate input:checked + label {
+  border: 4px solid #5C92B7;
+}
+.whatTranslate input:checked + label::after {
+  position: relative;
+  right: -50%;
+  top: -130px;
+  padding: 5px 10px;
+  content: "✔";
+  font-size: 150%;
+  color: white;
+  background-color: #5C92B7;
+  border: 1px solid #5C92B7;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+.itemTitle::before {
+    margin: 1em;
+    padding: .4em .75em;
+    border: 1px solid RGB(177, 182, 205);
+    border-radius: 2em;
+    counter-increment: heading;
+    content: counter(heading);
+}
+.itemTitle{
+  text-indent: -80px;
+  font-size: 110%;
+  font-weight: 200; /* Жирное начертание */
+}
+.itemTitle small {
+  font-size: 60%;
+  font-weight: 100;
+}
+.filesTable table {
+  font-size: 70%;
+  width: 100%;
+}
+.filesTable th{
+  text-align: left;
+  width: 25%;
+}
+
+.Select-your-desired-tone{
+  min-width: 200px;
+  max-width: 300px;
+  float: left;
+}
+
+.Select-your-desired-tone input {
+  display:none;
+}
+.Select-your-desired-tone label {
+  display: block;
+  cursor:pointer;
+  margin: 15px 0px;
+  height: 50px; 
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.Select-your-desired-tone input:checked + label {
+  border: 4px solid #5C92B7;
+}
+.Select-your-desired-tone input:checked + label::after {
+  position: relative;
+  right: -5px;
+  top: -20px;
+  padding: 5px 10px;
+  content: "✔";
+  font-size: 150%;
+  color: white;
+  background-color: #5C92B7;
+  border: 1px solid #5C92B7;
+  border-radius: 50%;
+}
+
+/*+ no-beautify */
+.icon { /*  .friendlyCasualTone */
+  margin: 5px 20px;
+  width: 46px;
+  height: 46px;
+  float: left;
+  background: url(../Icons.png) no-repeat;
+  mix-blend-mode: multiply; 
+}
+label[for="desiredToneCasual"] .icon{
+  background-position: -2px -2px;
+  cursor: pointer;
+}
+label[for="desiredTonePro"] .icon{
+  background-position: -2px -52px;
+  cursor: pointer;
+}
+label[for="desiredToneFormal"] .icon{
+  background-position: -2px -102px; /* вверх на 100px */
+  cursor: pointer;
+}
+
+
+
+.how-urgent-this-job-is{
+  display: block;
+}
+.timelineInfo{
+  font-size: 70%;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding: 20px;
+}
+
+.item5{
+}
+.oneByOne{
+  display: flex;  
+  flex-direction: row; 
+}
+.paySys {  
+  margin-top: 25px; 
+  display: flex;  
+  flex-direction: row;  
+  align-items: center;
+} 
+.card {
+  margin-top: 25px;  
+  display: flex;  
+  flex-direction: row;
+}
+.cardNumber{
+  width: 20em;
+}
+.cardCNN{
+  width: 5em;
+}
+.mainFooter {
+  margin: 40px;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainFooter button{
+  margin-left: 20px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html >
+  <head>
+	    <meta charset="UTF-8">
+	    <title>A Pen by  Dmitriy Yarygin</title>
+	    <link rel="stylesheet" href="css/headerFooter.css">
+	    <link rel="stylesheet" href="css/style.css">
+	    <!-- script async defer src="index.js"></script -->    
+  </head>
+
+  <body>
+
+	<header class="allPagesHeader">
+	  <a class=go-back role=button href="history.back()"> go back </a>
+	  <img src="emblem.png" alt='emblem'>
+	  <a class=sign-in role=button href=/> sign in </a>
+	</header> 
+
+<form class="translationOrderForm">
+
+	<header class="order-header">
+
+	    <section class="your-order">
+	        <h1> your order </h1>
+	        <table class="orderTable">
+	          <tr>
+	            <th>items</th>
+	            <th>details</th>
+	            <th>price</th>
+	            <th>delivery</th>
+	          </tr>
+	          <tr>
+	            <td>documents</td>
+	            <td>languages</td>
+	            <td>$0.00</td>
+	            <td>X hours</td>
+	          </tr>
+	        </table>
+		</section>
+		
+		<section class="order-buttons">
+		  <button class="place-order-button">place order</button>
+		  <button class="print-quote-button">print a quote</button>
+		</section>
+	    
+	    <section class="help-center">
+	      <h1>help center</h1>
+	      <p>If you need assistance while placing your 
+	        order, contact one of our beloved Project 
+	        Manager by phone or email.</p>
+	      <a href="tel:+9710555555"> +971(0)555 555 </a>   
+	      <a href="mailto:help@qtest.com">help@qtest.com</a> 
+	    </section>
+
+	</header>
+    
+
+  <section class="what-you-want-translate">
+      	<h1>select what you want to translate</h1>
+      	<div class="bottomLine"> </div> 
+	    <div class="whatTranslate">
+		    <input type="radio" name="whatTranslate" value="Website" id="translateWebsite">
+	    	<label for="translateWebsite">      
+		        <img src="SocialAccount.png">
+					Website </label> 
+			<input type="radio" name="whatTranslate" value="Document" id="translateDocument" checked>	
+	    	<label for="translateDocument">		        
+		        <img src="Documents.png">
+					Document </label> 
+			<input type="radio" name="whatTranslate" value="SocialAccount" id="translateSocialAccount">
+		    <label for="translateSocialAccount">    
+		        <img src="website.png">
+					Social Account </label> 
+	    </div>            
+  </section>
+
+  <section class="Upload-your-documents">
+	      <p class="itemTitle"> Upload your documents  <small>(Doc, Docx,Text,PDF, Markdown)</small>   </p>
+	      <p>
+	          <input type="file" accept=" application/msword, text/plain, application/pdf, text/xml">
+	      </p>
+	      <div class="filesTable">
+	        <table>
+	          <tr>
+	            <th>FILE NAME</th>
+	            <th>FILE SIZE</th>
+	            <th>NUMBER OF WORDS</th>
+	            <th>REMOVE</th>
+	          </tr>
+	        </table>
+	      </div>  
+  </section>
+  
+  <section class="item2">
+	    <p class="itemTitle"> Choose your languages pairings </p>
+	    <label>FROM</label>
+	    <select id="myMixSelector1"> 
+	      <option>English</option>
+	      <option>Arabic</option>
+	      <option>Kurdish</option>
+	    </select>    
+	    <br><br>
+	    <label>TO</label> 
+	    <button> + ADD </button>
+  </section>
+
+  <section class="Select-your-desired-tone">
+	    <p class="itemTitle"> Select your desired tone </p>
+
+	    <input type="radio" name="desiredTone" value="Casual" id="desiredToneCasual">
+		<label for="desiredToneCasual">
+			<div class="icon"></div>
+			Friendly / Casual </label>
+
+	    <input type="radio" name="desiredTone" value="Pro" id="desiredTonePro" checked>
+		<label for="desiredTonePro">			
+			<div class="icon"></div>
+			Corporate / Pro </label>   
+
+	    <input type="radio" name="desiredTone" value="Formal" id="desiredToneFormal">
+		<label for="desiredToneFormal">
+			<div class="icon"></div>
+			Media / Formal  </label>
+
+  </section>    
+
+  <section class="how-urgent-this-job-is">
+	    <p class="itemTitle"> Tell us how urgent this job is </p>
+	    <label>I GOT TIME</label>
+	    <input type="range" min="1" max="3" step="1" value="2"/>    
+	    <label>YESTERDAY</label>
+	    <div class="timelineInfo">
+	      <b>TIMELINE INFO</b>
+	      <p>With an AVERAGE timeline det up our translator can take a reasonable amount of time perfecting your translation</p>
+	    </div>
+  </section> 
+  
+  <section class="item5">
+	    <p class="itemTitle"> Sign up and choose a payment method</p>
+	    <p>Alredy have anaccount with us? <a href="" >Sign in.</a></p>
+	    
+	        <label> FULL NAME <br>
+	        <input type="text" value="Mathieu Mayer">  </label>  
+	    <div class="oneByOne">
+	      <div>
+	        <label> EMAIL ADRESS <br>
+	        <input type="email" value="mathieu.mm@me.com"></label>
+	      </div>
+	      <div>  
+	        <label>CHOOSE A PASSWORD <br>
+	        <input type="password"></label> 
+	      </div>
+	    </div>
+	    <div class="paySys">   
+	            <input type="radio" name="paySys" value="VISAorMC" id="paySysVISAorMC" checked>
+	    		<label for="paySysVISAorMC"> VISA / MasterCard </label>
+	            <input type="radio" name="paySys" value="PayPal" id="paySysPayPal">
+	    		<label for="paySysPayPal"> PayPal </label>
+	            <input type="radio" name="paySys" value="amazon" id="paySysAmazon">
+	    		<label for="paySysAmazon"> amazon.com </label>
+	    </div>    
+	        
+	    <div class="card">
+	        <label>CARD NUMBER <br>
+	            <input type="text" autocomplete="off" class="cardNumber" maxlength="19" tabindex="3" error-hint="Некорректные данные"> </label>
+	        <label>EXPIRE DATE <br>
+	            <input type="date" class="cardDate" > </label>
+	        <label>CODE<br>
+	            <input class="cardCNN" maxlength="3"> </label>
+	    </div>
+  </section> 
+    
+    
+      <div class="mainFooter">
+        <input type="checkbox" checked>
+        <small>I agree to the <a href="" >Terms & Conditions</a></small>
+        <button class="place-order-button">place order</button>
+        <button>print a quote</button>
+      </div>
+  
+</form>
+
+
+
+<footer class="allPagesFooter">
+  <section class="what-we-do"> 
+    <h1>&#9825 what we do</h1> 
+    <p><i> We provide a full range of language
+          services including content development, 
+          document, website and social media 
+          accounts translations. </i></p> 
+  </section>    
+    
+  <section class="our-main-office"> 
+      <h1>&#9990 our main office</h1>
+      <adress class="p-o-Box">   
+          <p> Dubai, UAE </p>
+          <p> P.O. Box: 502735 </p>
+      </adress> 
+      <a href="tel:+971044278128"> Phone: +971(0)44278128 </a>
+  </section>   
+  
+  <section class="connect-with-us">  
+    <h1>connect with us</h1>
+      <ul>
+        <li> Facebook </li>
+        <li> Twitter </li>
+        <li> Linkedin </li> 
+      </ul>      
+  </section>  
+  
+  <img src="emblem.png" alt='emblem'> 
+</footer>
+    
+    
+    
+    
+    
+  </body>
+</html>
