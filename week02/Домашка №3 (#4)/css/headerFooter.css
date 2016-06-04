@@ -1,7 +1,7 @@
 body{
   font-family: Arial;
   color: rgb(128, 128, 128);
-  background-color: RGB(236, 238, 244);
+  background-color: rgb(236, 238, 244);
   counter-reset: heading; /* Инициируем счетчик */
 }
 .allPagesHeader{

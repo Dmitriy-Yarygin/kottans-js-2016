@@ -5,7 +5,8 @@
 	    <title>A Pen by  Dmitriy Yarygin</title>
 	    <link rel="stylesheet" href="css/headerFooter.css">
 	    <link rel="stylesheet" href="css/style.css">
-	    <!-- script async defer src="index.js"></script -->    
+	    <!--  -->  
+	    <script async defer src="index.js"></script>   
   </head>
 
   <body>
@@ -55,9 +56,9 @@
 	</header>
     
 
-  <section class="what-you-want-translate">
-      	<h1>select what you want to translate</h1>
-      	<div class="bottomLine"> </div> 
+  <section class="what-you-want-translate">      	
+      	<div class="headingWithBottomLine"> 
+      		<h1>select what you want to translate</h1> </div> 
 	    <div class="whatTranslate">
 		    <input type="radio" name="whatTranslate" value="Website" id="translateWebsite">
 	    	<label for="translateWebsite">      
@@ -82,26 +83,40 @@
 	      <div class="filesTable">
 	        <table>
 	          <tr>
-	            <th>FILE NAME</th>
-	            <th>FILE SIZE</th>
-	            <th>NUMBER OF WORDS</th>
-	            <th>REMOVE</th>
+	            <th>file name</th>
+	            <th>file size</th>
+	            <th>number of words</th>
+	            <th>remove</th>
 	          </tr>
 	        </table>
 	      </div>  
   </section>
   
-  <section class="item2">
+  <section class="Choose-your-languages">
 	    <p class="itemTitle"> Choose your languages pairings </p>
-	    <label>FROM</label>
-	    <select id="myMixSelector1"> 
-	      <option>English</option>
-	      <option>Arabic</option>
-	      <option>Kurdish</option>
-	    </select>    
-	    <br><br>
-	    <label>TO</label> 
-	    <button> + ADD </button>
+
+	    <div class="TranslateFrom">
+	    	<label> FROM </label> 
+		    <div>  <!--  <div class="verticalDelimiter"></div> -->
+			    <select> 
+			      <option value="English">English</option>
+			      <option value="Arabic">Arabic</option>
+			      <option value="Kurdish">Kurdish</option>
+			    </select> 
+			    
+			</div> 
+		</div>     
+	    <div>
+		    <label>TO</label> 
+			<div class="TranslateTo"> 
+			    <select> 
+			      <option>English</option>
+			      <option>Arabic</option>
+			      <option>Kurdish</option>
+			    </select> 
+			</div> 
+	    	<button> + ADD </button>   
+		</div>
   </section>
 
   <section class="Select-your-desired-tone">
@@ -125,13 +140,16 @@
   </section>    
 
   <section class="how-urgent-this-job-is">
-	    <p class="itemTitle"> Tell us how urgent this job is </p>
-	    <label>I GOT TIME</label>
-	    <input type="range" min="1" max="3" step="1" value="2"/>    
-	    <label>YESTERDAY</label>
+	    <p class="itemTitle"> Tell us how urgent this job is </p>	    
+	    <input class="urgentRange" type="range" min="0" max="2" step="1" value="1"/>    
+	    <div>
+		    <label>i got time</label>
+		    <label>average</label>
+		    <label>yersterday</label>
+	    </div>
 	    <div class="timelineInfo">
 	      <b>TIMELINE INFO</b>
-	      <p>With an AVERAGE timeline det up our translator can take a reasonable amount of time perfecting your translation</p>
+	      <p>With an <span> average</span> timeline det up our translator can take a reasonable amount of time perfecting your translation</p>
 	    </div>
   </section> 
   

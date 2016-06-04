@@ -1,48 +1,21 @@
-var myOptions = [ "normal", "multiply", "screen", "overlay", "darken",
-                  "lighten", "color-dodge", "color-burn", "hard-light", "soft-light",
-                   "difference", "exclusion", "hue", "saturation", "color", "luminosity" ]
 
 
 
-var myPicture = document.getElementsByTagName('img')[0];
-var selectorObj = document.getElementById("myMixSelector");
-
-myOptions.forEach( function(item){ 
-  addOption( selectorObj, item, item );  
-} );
+  var urgentRange = document.getElementsByClassName('urgentRange')[0];
+  urgentRange.nextElementSibling.children[1].style.color="orange"
 
 
-function addOption (oListbox, text, value){
-  var oOption = document.createElement("option");
-  oOption.appendChild(document.createTextNode(text));
-  oOption.setAttribute("value", value);
-  oListbox.appendChild(oOption);
-}
+ urgentRange.onchange = function(){
+  var timelineInfo = document.getElementsByClassName('timelineInfo')[0];
+  timelineInfo.lastElementChild.firstElementChild.innerHTML = urgentRange.nextElementSibling.children[urgentRange.value].innerHTML;
 
-
- selectorObj.onchange = function(){
-  if ( selectorObj.selectedIndex != -1)
-    {
-      myPicture.style.mixBlendMode = selectorObj.options[selectorObj.selectedIndex].value;
-    }
+  for (var i = 0; i < 3; i++) {
+    urgentRange.nextElementSibling.children[i].style.color="inherit";
+  }
+  urgentRange.nextElementSibling.children[urgentRange.value].style.color="orange"
+ 
  }
 
 
 
-/* mix-blend-mode: normal;
-mix-blend-mode: multiply;
-mix-blend-mode: screen;
-mix-blend-mode: overlay;
-mix-blend-mode: darken;
-mix-blend-mode: lighten;
-mix-blend-mode: color-dodge;
-mix-blend-mode: color-burn;
-mix-blend-mode: hard-light;
-mix-blend-mode: soft-light;
-mix-blend-mode: difference;
-mix-blend-mode: exclusion;
-mix-blend-mode: hue;
-mix-blend-mode: saturation;
-mix-blend-mode: color;
-mix-blend-mode: luminosity;
-*/
+
