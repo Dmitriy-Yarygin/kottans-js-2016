@@ -207,7 +207,8 @@ button{
   height: 40px;
 }
 .Choose-your-languages>div{
-  display: flex;
+  display: flex;  
+  flex-wrap: wrap;
   /*flex-direction: raw; */
   align-items: center;
 }
@@ -427,22 +428,17 @@ background: #ccc;
 }
 
 /*   555555555555555555555555555555555555555555555555555555555555555555555      */
-.item5{
+.sign-in-and-payment-method>div{
+  margin-top: 1em;
 }
-.oneByOne{
+.sign-in-email-password, .paySys, .card{
   display: flex;  
+  flex-wrap: wrap;
   flex-direction: row; 
 }
-.paySys {  
-  margin-top: 25px; 
-  display: flex;  
-  flex-direction: row;  
-  align-items: center;
-} 
-.card {
-  margin-top: 25px;  
-  display: flex;  
-  flex-direction: row;
+.paySys>label{
+    display: flex;
+    align-items: center;
 }
 .cardNumber{
   width: 20em;
