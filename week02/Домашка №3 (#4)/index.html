@@ -5,6 +5,7 @@
 	    <title>A Pen by  Dmitriy Yarygin</title>
 	    <link rel="stylesheet" href="css/headerFooter.css">
 	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/media-queries.css">
 	    <!--  -->  
 	    <script async defer src="index.js"></script>   
   </head>
@@ -13,7 +14,7 @@
 
 	<header class="allPagesHeader">
 	  <a class=go-back role=button href="history.back()"> go back </a>
-	  <img src="emblem.png" alt='emblem'>
+	  <img  class="logo" src="emblem.png" alt='emblem'>
 	  <a class=sign-in role=button href=/> sign in </a>
 	</header> 
 
@@ -82,7 +83,7 @@
 	      </p>
 	      <div class="filesTable">
 	        <table>
-	          <tr>
+	          <tr  class="Upload-your-documents-headTableRow">
 	            <th>file name</th>
 	            <th>file size</th>
 	            <th>number of words</th>
@@ -96,7 +97,7 @@
 	    <p class="itemTitle"> Choose your languages pairings </p>
 
 	    <div class="TranslateFrom">
-	    	<label> FROM </label> 
+	    	<label> from </label> 
 		    <div>  <!--  <div class="verticalDelimiter"></div> -->
 			    <select> 
 			      <option value="English">English</option>
@@ -107,15 +108,25 @@
 			</div> 
 		</div>     
 	    <div>
-		    <label>TO</label> 
+		    <label>to</label> 
 			<div class="TranslateTo"> 
 			    <select> 
-			      <option>English</option>
 			      <option>Arabic</option>
+			      <option>English</option>
 			      <option>Kurdish</option>
 			    </select> 
 			</div> 
-	    	<button> + ADD </button>   
+
+			<div class="TranslateTo"> 
+			    <select> 
+			      <option>Kurdish</option>
+			      <option>English</option>
+			      <option>Arabic</option>
+			    </select> 
+			</div> 
+			
+			<div class="icon"></div>
+	    	<button> + add </button>   
 		</div>
   </section>
 
@@ -221,13 +232,19 @@
   <section class="connect-with-us">  
     <h1>connect with us</h1>
       <ul>
-        <li> Facebook </li>
-        <li> Twitter </li>
-        <li> Linkedin </li> 
+        <li class="weOnFacebook"> 
+        	<img src="facebook-square.svg">
+        	<a  href="https://www.facebook.com">  Facebook </a>
+        <li class="weOnTwitter">  
+        	<img src="twitter.svg">
+        	<a class="weOnTwitter" href="https://twitter.com"> Twitter </a>
+        <li class="weOnLinkedin">  
+        	<img src="linkedin.svg">
+        	<a class="weOnLinkedin" href="https://www.linkedin.com/">  Linkedin</a>
       </ul>      
   </section>  
   
-  <img src="emblem.png" alt='emblem'> 
+  <img class="logo" src="emblem.png" alt='emblem'> 
 </footer>
     
     

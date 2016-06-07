@@ -1,0 +1,22 @@
+@media screen and (max-width : 599px) {
+	.translationOrderForm {   
+	  margin: 0px 0px 140px 0px;
+	} 
+	.allPagesHeader{
+	  margin-left: 1%;
+	  margin-right: 1%;
+	}  
+	.translationOrderForm>section{
+	  padding: 10px;
+	}
+	.allPagesFooter {
+	    padding: 10px;
+	}
+
+	.itemTitle{
+	  text-indent: -20px;
+	}
+	.itemTitle::before {
+	    margin: 0px;
+	}
+}
